@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tornado.org.infowindow.fx.Controller">
+   <children>
+      <ListView fx:id="lst" layoutX="380.0" layoutY="14.0" prefHeight="370.0" prefWidth="200.0" style="-fx-border-width: 1; -fx-border-style: solid;" />
+      <Label fx:id="nameLbl" alignment="TOP_LEFT" layoutX="258.0" layoutY="14.0" prefHeight="17.0" prefWidth="112.0" style="-fx-border-width: 1; -fx-border-style: solid;" />
+      <Label fx:id="lifeTimeLbl" alignment="TOP_LEFT" layoutX="258.0" layoutY="40.0" prefHeight="17.0" prefWidth="112.0" style="-fx-border-width: 1; -fx-border-style: solid;" />
+      <Label fx:id="knownForLbl" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="237.0" style="-fx-border-width: 1; -fx-border-style: solid;" wrapText="true" />
+      <ImageView fx:id="imageView" fitHeight="316.0" fitWidth="357.0" layoutX="14.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</Pane>
