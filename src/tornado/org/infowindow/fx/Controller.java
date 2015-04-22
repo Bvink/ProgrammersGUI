@@ -56,10 +56,10 @@ public class Controller implements Initializable {
             int i = 0;
             while (stringRead != null) {
                 Pioneer p = new Pioneer();
-                String[] elements = stringRead.split(",");
+                String[] elements = stringRead.split(",", 3);
                 p.setName(" " + elements[0]);
                 p.setLifeTime((elements[1].length() > 7) ? elements[1] : elements[1].substring(0, 6) + "now");
-                p.setKnownFor((elements.length > 3) ? elements[2] + "," + elements[3] : elements[2]);
+                p.setKnownFor(elements[2]);
                 p.setImage(( i < Constants.IMAGE_URLS.length) ? Constants.IMAGE_URLS[i] : Constants.NO_IMAGE);
                 collection.add(p);
                 stringRead = br.readLine();
